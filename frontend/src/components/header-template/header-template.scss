@@ -1,0 +1,112 @@
+.header-fix {
+    transition: all 0.5s ease-in;
+    transition-duration: 0.5s;
+    position: fixed !important;
+    background-color: white;
+
+    .header__logo {
+        filter: invert(1);
+    }
+
+    
+    .header-callback__col_white,.header-links__item:hover {
+        color: #044222
+    }
+
+    .header-callback__col_pink,
+    .header-callback,.header-links {
+        color: black;
+    }
+
+    .header-calc {
+        position: relative !important;
+        // transition:right 0.5s linear;
+        right: 0 !important;
+        transition-duration: 0.2s;
+        background-color: #044222;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+
+        text-align: center;
+        letter-spacing: -0.6px;
+        text-transform: none;
+        color: white;
+        border-radius: 100px;
+        padding: 7px 24px;
+        cursor: pointer;
+    }
+}
+
+.header {
+    // font-family: 'Cormorant';
+    font-family: 'Geometria';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 17.5px 0;
+    transition: all 0.5s ease-in;
+
+    .header-calc {
+
+        position: absolute;
+        right: -100%;
+        // transition:right 0.5s linear;
+        transition-duration: 0.2s;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-links {
+        display: flex;
+        gap: 16px;
+        font-size: 14px;
+
+        &__item:hover {
+            color: #E0C5C3;
+        }
+
+        &__item {
+            cursor: pointer;
+        }
+
+    }
+
+    &-callback {
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        gap: 27px;
+    }
+
+    &-callback__col {
+
+        display: flex;
+        flex-direction: column;
+
+        text-transform: none;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    &-callback__col_white {
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    &-callback__col_pink {
+        color: #E0C5C3;
+        font-size: 12px;
+    }
+}

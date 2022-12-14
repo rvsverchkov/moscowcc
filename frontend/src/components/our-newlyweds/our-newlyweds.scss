@@ -1,0 +1,85 @@
+.newlyweds {
+    background-color: #FEEEEC;
+    background-image: url('../../assets/image/molodozheni-white.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    .swiper-slide {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-slider__title {
+        font-family: 'Cormorant';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 8px;
+        color: #044222;
+        margin-top: 24px;
+    }
+
+    &-slider__place {
+        font-family: 'Geometria';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+
+        color: #7F7F7F;
+        padding-bottom: 216px;
+    }
+
+    .swiper-button-next {
+        top: auto;
+        bottom: 128px;
+
+        &::after {
+            background-color: white;
+            content: '';
+            background-image: url(http://localhost:8080/img/pagination-right.9a461c2b.svg);
+            background-repeat: no-repeat;
+            z-index: 9;
+            height: 48px;
+            width: 48px;
+            min-width: 48px;
+            background-position: center;
+            border-radius: 50%;
+        }
+    }
+
+    .swiper-button-prev {
+        top: auto;
+        bottom: 128px;
+        right: 200px;
+        left: auto;
+        &::after {
+            content: '';
+            background-image: url('../../assets/image/pagination-left.svg');
+            background-repeat: no-repeat;
+            background-color: white;
+            z-index: 9;
+            height: 48px;
+            width: 48px;
+            min-width: 48px;
+            background-position: center;
+            border-radius: 50%;
+        }
+    }
+
+    .swiper-pagination-fraction {
+        top: auto;
+        bottom: 140px;
+        width: fit-content;
+        right: 105px;
+        left: auto;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        color: #044222;
+        font-family: 'PrahoPro';
+    }
+}
