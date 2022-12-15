@@ -1,8 +1,91 @@
 .proposal{
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding-top: 100px;
     background-image: url('../../assets/image/proposal-bg.svg');
     background-repeat: no-repeat;
     background-position: top right;
+    flex-direction: column;
+    &__slider-title{
+        font-family: 'Geometria';
+        font-weight: 500;
+        font-size: 20px;
+        line-height:130%;
+        color: #044222;
+        margin-bottom: 8px;
+        max-width: 86%;
+        padding-top: 16px;
+    }
+    &__slider-subtitle{
+        font-family: 'Geometria';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #7F7F7F;
+        max-width: 86%;
+    }
+    
+    &__slider-item{
+margin-top: 48px;
+width: calc(100% - 168px);
+margin-left: 0;
+.swiper-slide{
+        border-top: 3px solid #EDEEF3;
+        // cursor: pointer;
+        width: calc(100%/4);
+    }
+    .swiper-slide-active{
+        border-top: 3px solid #044222 !important;
+        .proposal__slider-title{
+            color: #000000; 
+        }
+    }
+    }
+    &__slider{
+        position: relative;
+    }
+    .swiper-button-next {
+        // top: auto;
+        // bottom: 128px;
+
+        &::after {
+            background-image: url('../../assets/image/pagination-right.svg');
+            background-color: white;
+            content: '';
+            background-repeat: no-repeat;
+            z-index: 9;
+            height: 48px;
+            width: 48px;
+            min-width: 48px;
+            background-position: center;
+            border-radius: 50%;
+            border: 1px solid #EDEEF3;
+
+        }
+    }
+
+    .swiper-button-prev {
+        // top: auto;
+        // bottom: 128px;
+        // right: 200px;
+        // left: auto;
+        right: 90px;
+    left: auto;
+        &::after {
+            content: '';
+            background-image: url('../../assets/image/pagination-left.svg');
+            background-repeat: no-repeat;
+            background-color: white;
+            z-index: 9;
+            height: 48px;
+            width: 48px;
+            min-width: 48px;
+            background-position: center;
+            border-radius: 50%;
+            border: 1px solid #EDEEF3;
+
+        }
+    }
+
+
 }

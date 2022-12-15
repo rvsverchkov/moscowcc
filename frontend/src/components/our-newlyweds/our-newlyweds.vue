@@ -10,7 +10,7 @@
         :breakpoints="swiperOption.breakpoints"
         :navigation="true"
         :modules="modules"
-        class="mySwiper"
+        class="newlyweds-slider"
       >
         <swiper-slide v-for="(slide, index) in slides" :key="index">
           <img :src="slide.img" alt="" class="newlyweds-slider__img" />
@@ -22,7 +22,7 @@
   </div>
 </template>
 <script>
-import { onMounted, ref } from "vue";
+import {  ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
@@ -75,6 +75,7 @@ export default {
         title: "Анастасия и Святослав",
         place: "Выездная регистрация",
       },
+
     ]);
     return {
       modules: [Pagination, Navigation],

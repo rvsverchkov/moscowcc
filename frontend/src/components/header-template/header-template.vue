@@ -29,7 +29,7 @@ export default {
 setup(){
     const isActive = ref(false)
     window.onscroll = function () {
-        console.log(window.pageYOffset)
+
         if(window.pageYOffset!=0){
             isActive.value=true
         }
