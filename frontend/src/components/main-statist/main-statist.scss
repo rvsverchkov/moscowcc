@@ -1,0 +1,51 @@
+.main-statist{
+
+    background: #000;
+  
+
+    &_bg{
+        background-image: url('../../assets/image/statist-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+            padding-top: 100px;
+            width: 100%;
+            opacity: 0.7;
+            padding-bottom: 149px;
+            display: flex;
+            justify-content: center;
+    }
+    .mini-title, .big-title, .title-description{
+        color: white;
+        max-width: 858px;
+    }
+    &__block{
+        margin-top: 72px;
+        max-width: 1133px;
+        width: 100%;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+    &__block-item{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: white;
+    }
+    &__block-item-title{
+        font-family: 'PrahoPro';
+        font-weight: 300;
+        font-size: 70px;
+        line-height: 110% ;
+        color: #FFFFFF;
+        
+    }
+    &__block-item-subtitle{
+        font-family: 'Geometria';
+        font-weight: 400;
+        font-size: 18px;
+        line-height:144%;
+        color: #FFFFFF;
+    }
+}

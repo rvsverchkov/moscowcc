@@ -1,0 +1,174 @@
+.services-slider {
+    font-family: 'Geometria';
+
+    .mini-title {
+        margin-top: 100px;
+
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        opacity: 0.7;
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #000000;
+    }
+
+    &__desc {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+
+        opacity: 0.7;
+
+    }
+
+    .swiper-button-prev {
+        top: auto;
+        bottom: 85px;
+        right: 200px;
+        left: auto;
+        &::after{
+            content: '';
+    background-image: url('../../assets/image/pagination-left.svg');
+    background-repeat: no-repeat;
+    background-color: white;
+    z-index: 9;
+    height: 48px;
+    width: 48px;
+    min-width: 48px;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid #EDEEF3;
+        }
+    }
+
+    .swiper-button-next {
+        top: auto;
+        bottom: 85px;
+        &::after{
+            background-image: url('../../assets/image/pagination-right.svg');
+    background-color: white;
+    content: '';
+    background-repeat: no-repeat;
+    z-index: 9;
+    height: 48px;
+    width: 48px;
+    min-width: 48px;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid #EDEEF3;
+        }
+    }
+
+    .swiper-pagination-fraction {
+        top: auto;
+        bottom: 96px;
+        width: -moz-fit-content;
+        width: fit-content;
+        right: 105px;
+        left: auto;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        color: #044222;
+        font-family: 'PrahoPro';
+    }
+
+    .swiper-slide {
+        background: #FEEEEC;
+        border-radius: 30px;
+        width: calc((100% / 3) - 21px);
+        border: 2px solid rgba(245, 82, 61, 0.5);
+        height: auto;
+
+        // padding: 40px 56px 40px;
+        &:nth-child(3n+1)::before {
+            content: '';
+            background-image: url('../../assets/image/spec1.svg');
+            width: 64px;
+            height: calc(100% + 3px);
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: absolute;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-color: #FEEEEC;
+            right: -4px;
+            bottom: 0px;
+        }
+
+        &:nth-child(3n+2)::before {
+            content: '';
+            background-image: url('../../assets/image/spec2.svg');
+            width: 66.2px;
+            height: calc(100% + 3px);
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: absolute;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-color: #FEEEEC;
+            right: -4px;
+            bottom: 1px;
+
+            // background-repeat: no-repeat;
+        }
+
+        &:nth-child(3n+3)::before {
+            content: '';
+            background-image: url('../../assets/image/spec3.svg');
+            width: calc(210px + 40px);
+            height: 70px;
+            /* border-top-right-radius: 30px; */
+            /* border-bottom-right-radius: 30px; */
+            background: linear-gradient(transparent 25%, #FEEEEC 19%);
+            position: absolute;
+            background-position: top left;
+            background-repeat: no-repeat;
+            // background-color: #FEEEEC;
+            /* right: 50%; */
+            right: 60px;
+            /* transform: translateX(-50%); */
+            /* bottom: 0px; */
+            top: -21px;
+        }
+
+        &:nth-child(3n+3)::after {
+            content: '';
+            background-image: url('../../assets/image/spec3.svg');
+            width: calc(210px + 40px);
+            height: 70px;
+            position: absolute;
+            background-position: top left;
+            background-repeat: no-repeat;
+            right: 60px;
+            top: -23px;
+        }
+    }
+
+    &__block {
+        width: 100%;
+        padding-top: 45px;
+        padding-bottom: 200px;
+    }
+
+    &__block_pad {
+        padding: 40px 32px 40px;
+    }
+}

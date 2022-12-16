@@ -119,6 +119,7 @@ export default {
         },
         slides: {
           img: require("@/assets/image/proposal-tab.png"),
+          mainTitle:'Мы предлагаем несколько роскошных площадок для вашего торжества: банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан «Времена года», а также шатры',
           slide: [
             {
               img: require("@/assets/image/proposal-tabs/slide1.svg"),
@@ -166,6 +167,7 @@ export default {
         },
         slides: {
           img: require("@/assets/image/proposal-tab.png"),
+          mainTitle:'Мы предлагаем несколько роскошных площадок для вашего торжества: банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан «Времена года», а также шатры',
         slide: [
           {
             img: require("@/assets/image/proposal-tabs/slide1.svg"),
@@ -213,6 +215,7 @@ export default {
         },
         slides: {
           img: require("@/assets/image/proposal-tab.png"),
+          mainTitle:'Мы предлагаем несколько роскошных площадок для вашего торжества: банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан «Времена года», а также шатры',
         slide: [
           {
             img: require("@/assets/image/proposal-tabs/slide1.svg"),
@@ -260,6 +263,7 @@ export default {
         },
         slides: {
           img: require("@/assets/image/proposal-tab.png"),
+          mainTitle:'Мы предлагаем несколько роскошных площадок для вашего торжества: банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан «Времена года», а также шатры',
         slide: [
           {
             img: require("@/assets/image/proposal-tabs/slide1.svg"),
@@ -307,6 +311,7 @@ export default {
         },
         slides: {
           img: require("@/assets/image/proposal-tab.png"),
+          mainTitle:'Мы предлагаем несколько роскошных площадок для вашего торжества: банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан «Времена года», а также шатры',
         slide: [
           {
             img: require("@/assets/image/proposal-tabs/slide1.svg"),
@@ -354,6 +359,7 @@ export default {
         },
         slides: {
           img: require("@/assets/image/proposal-tab.png"),
+          mainTitle:'Мы предлагаем несколько роскошных площадок для вашего торжества: банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан «Времена года», а также шатры',
         slide: [
           {
             img: require("@/assets/image/proposal-tabs/slide1.svg"),

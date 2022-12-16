@@ -18,6 +18,8 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        font-family: 'Geometria';
+        font-weight: 500;
         &__title {
             font-family: 'Cormorant';
             font-style: normal;
@@ -54,6 +56,15 @@
             align-items: center;
             gap: 10px;
             cursor: pointer;
+            a{
+                color: #044222;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }

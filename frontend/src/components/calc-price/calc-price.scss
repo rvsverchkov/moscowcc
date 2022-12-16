@@ -1,0 +1,77 @@
+.calc-price {
+    display: flex;
+    justify-content: center;
+    background-color: #FEEEEC;
+    padding-bottom: 100px;
+    position: relative;
+    &::after{
+content: '';
+background-image: url('../../assets/image/rose1.svg');
+position: absolute;
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+
+    }
+    &::before{
+        content: '';
+        background-image: url('../../assets/image/rose2.svg');
+        position: absolute;
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-position-x: right;
+top: 20px;
+    }
+    .mini-title {
+        padding-top: 100px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+.container{
+    z-index: 2;
+}
+    &__title {
+        font-family: 'Cormorant';
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 100%;
+        text-align: center;
+        color: #044222;
+    }
+
+    &__subtitle {
+        font-family: 'Geometria';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 92%;
+        text-align: center;
+        color: #7F7F7F;
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+
+    &__button {
+        font-family: 'Geometria';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: -0.6px;
+        color: #FFFFFF;
+        background: #044222;
+border-radius: 100px;
+width: fit-content;
+margin: auto;
+padding: 15px 24px;
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    svg{
+        margin-left: 10px;
+    }
+}
+    }
+}

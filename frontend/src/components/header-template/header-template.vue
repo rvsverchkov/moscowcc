@@ -28,9 +28,12 @@ export default {
     
 setup(){
     const isActive = ref(false)
+    const banner = ref()
+
+
     window.onscroll = function () {
 
-        if(window.pageYOffset!=0){
+        if(window.pageYOffset>banner.value){
             isActive.value=true
         }
         else{
@@ -38,10 +41,14 @@ setup(){
         }
     }
     onMounted(()=>{
-
+         setTimeout(() => {
+          banner.value = document.querySelector('.main-banner').offsetHeight
+      console.log(banner.value)
+    }, 100);
 })
     return{
-        isActive
+        isActive,
+        banner
     }
 }
 };

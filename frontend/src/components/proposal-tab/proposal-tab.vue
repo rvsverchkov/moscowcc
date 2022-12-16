@@ -3,9 +3,7 @@
     <div class="container">
       <div class="proposal-tab__title">{{titleSlide}}</div>
       <div class="proposal-tab__subtitle">
-        Мы предлагаем несколько роскошных площадок для вашего торжества:
-        банкетный зал «Forest Country Hall», ресторан «Зимний сад», ресторан
-        «Времена года», а также шатры
+        {{slider?.mainTitle}}
       </div>
     </div>
     <div class="proposal-tab-content">
